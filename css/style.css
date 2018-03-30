@@ -43,25 +43,25 @@ body {
   margin: 0;
   padding: 0;
 }
-main {
-  background-color: var(--cor1);
-  padding: 10px;
-  margin: 0 auto;
-  width: 1024px;
-}
 header {
   width: 100%;
   position: fixed;
   background-color:rgb(165, 70, 255);
-  padding: 10px 0 10px 175px;
+  padding: 10px 0;
   top: 0;
 }
-nav {
-  margin-top: 200px;
-  width: 1024px;
+.info-perfil {
+  background-color: rgba(0, 0, 0, .25);
+  padding: 5px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 0;
+  height: 180px;
+  border-top-right-radius: 20% 100%;
+  border-bottom-right-radius: 20% 100%;
+  border-top-left-radius: 20% 100%;
+  border-bottom-left-radius: 18% 100%;
+  border: thin solid var(--cor2);
 }
 .foto-perfil {
   position: absolute;
@@ -80,16 +80,10 @@ nav {
   border: thin solid var(--cor2);
   transition: all .3s;
 }
-.info-perfil {
-  background-color: rgba(0, 0, 0, .25);
-  padding: 5px;
-  width: 1000px;
-  height: 180px;
-  border-top-right-radius: 20% 100%;
-  border-bottom-right-radius: 20% 100%;
-  border-top-left-radius: 20% 100%;
-  border-bottom-left-radius: 18% 100%;
-  border: thin solid var(--cor2);
+.foto-perfil:hover {
+  background-size: 250px;
+  transition: all .3s;
+  background-position: 75% 35%;
 }
 .info-perfil h1 {
   color: var(--cor1);
@@ -104,12 +98,19 @@ nav {
   border-top: 16px double var(--cor1);
   border-bottom: 16px double var(--cor1);
 }
-.foto-perfil:hover {
-  background-size: 250px;
-  transition: all .3s;
-  background-position: 75% 35%;
+nav {
+  margin-top: 200px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+}
+main {
+  background-color: var(--cor1);
+  padding: 10px;
+  margin: 0 auto;
+  width: 1024px;
 }
 section {
-  transition: all 4s;
   padding: 10px;
 }
