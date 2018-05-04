@@ -22,7 +22,6 @@
 <body>
   <div id="conteiner" class="conteiner"></div>
   <script>
-    setInterval(function() { cronometro() } ,1000);
     function cronometro() {
       const final = new Date(2018, 4, 30, 12, 0, 0, 0);
       const agora = new Date(); 
@@ -35,6 +34,7 @@
       s -= m * 60;
       document.getElementById("conteiner").innerHTML = d + ' - ' + h + ':' + m + ':' + s;
     }
+    setInterval(function() { cronometro() } ,1000);
   </script>
 </body>
 </html>
