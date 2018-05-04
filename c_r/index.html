@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador Regressivo</title>
+  <style>
+    body {
+      background-color: #444;
+      color: #efefef;
+      height: 100vh;
+      padding-top: 30vh;
+    }
+    .conteiner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      font-size: 4em;
+      background-color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="conteiner" class="conteiner"></div>
+  <script>
+    const agora = new Date(),
+        final = new Date(2018, 4, 30, 12, 0, 0, 0);
+    let s = Math.floor((final - agora)/1000),
+        d = Math.floor(s/(24 * 60 * 60));
+    s -= d * 24 * 60 * 60;
+    let h = Math.floor(s/(60 * 60));
+    s -= h * 60 * 60;
+    let m = Math.floor(s/60);
+    s -= m * 60;
+    document.getElementById("conteiner").innerHTML = d + ' ' + h + ' ' + m + ' ' + s;
+        
+  </script>
+</body>
+</html>
