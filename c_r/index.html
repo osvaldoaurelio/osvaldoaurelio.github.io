@@ -15,7 +15,6 @@
       margin-right: auto;
       width: 90%;
       font-size: 5em;
-      background-color: #666;
       text-align: center;
     }
   </style>
@@ -34,7 +33,7 @@
       s -= h * 60 * 60;
       let m = Math.floor(s/60);
       s -= m * 60;
-      document.getElementById("conteiner").innerHTML = d + ' ' + h + ' ' + m + ' ' + s;
+      document.getElementById("conteiner").innerHTML = d + ' - ' + h + ':' + m + ':' + s;
     }
   </script>
 </body>
