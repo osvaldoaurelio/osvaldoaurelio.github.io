@@ -2,6 +2,7 @@
   --cor1: #fff;
   --cor2: #888;
   --cor3: #000;
+  --cor4: #666;
 }
 * {box-sizing: border-box;}
 .i-b {display: inline-block;}
