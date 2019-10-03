@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 400ms;
+  /* border: thin solid black; */
+}
+.d-f {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  font-size: 0.8em;
+}
+header nav {
+  text-align: center;
+  padding: 10px 0;
+  background-image: radial-gradient(#FFD5A6, #ED9554);
+}
+header div, main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+header div h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+header div ul {
+  margin-left: 50px;
+}
+
+main div.animate {
+  height: 320px;
+}
+main div.animate #animate-humano {
+  background-image: url(../img/human/papel.png);
+  background-repeat: no-repeat;
+  background-position-x: -100vw;
+  flex: 1;
+}
+.animate-humano-piedra-hover {
+  background-image: url(../img/human/piedra.png) !important;  
+  background-position-x: 0 !important;
+}
+.animate-humano-papel-hover {
+  background-image: url(../img/human/papel.png) !important;  
+  background-position-x: 0 !important;
+}
+.animate-humano-tijera-hover {
+  background-image: url(../img/human/tijera.png) !important;  
+  background-position-x: 0 !important;
+}
+main div.animate #animate-cpu {
+  background-image: url(../img/cpu/papel.png);
+  background-repeat: no-repeat;
+  background-position: 50vw;
+  flex: 1;
+}
+.animate-cpu-piedra-hover {
+  background-image: url(../img/cpu/piedra.png) !important;  
+  background-position-x: right !important;
+}
+.animate-cpu-papel-hover {
+  background-image: url(../img/cpu/papel.png) !important;  
+  background-position-x: right !important;
+}
+.animate-cpu-tijera-hover {
+  background-image: url(../img/cpu/tijera.png) !important;  
+  background-position-x: right !important;
+}
+main div.board {
+  justify-content: space-around;
+}
+main div.board div {
+  font-size: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer .images {
+  width: 162px;
+  align-items: center;
+  margin: 0 auto 5px;
+}
+footer .images img {
+  filter: grayscale(40%) opacity(0.6);
+  max-width: 50px;
+  transform: rotateY(180deg);
+  padding: 5px;
+}
+footer .images:hover img {
+  transform: scale(0.8) rotateY(180deg);
+}
+footer .images img:hover {
+  cursor: pointer;
+  transform: scale(1.5) rotateY(0deg);
+  filter: saturate(200%);
+}
+footer p {
+  text-align: center;
+  background-image: radial-gradient(#FFD5A6, #ED9554);
+  padding: 10px 0;
+}
