@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-navbar">
+        <h1>Rock Paper Scissors</h1>
+      </nav>
+      <div class="header-rules">
+        <p>No Janken-pon, os jogadores devem simultaneamente esticar a mão, na qual cada um formou um símbolo (que significa pedra, papel ou tesoura). Então, os jogadores comparam os símbolos para decidir quem ganhou, da seguinte forma:</p>
+        <ul>
+          <li>Pedra ganha da tesoura (amassando-a ou quebrando-a).</li>
+          <li>Tesoura ganha do papel (cortando-o).</li>
+          <li>Papel ganha da pedra (embrulhando-a).</li>
+        </ul>
+        <p>A pedra é simbolizada por um punho fechado; a tesoura, por dois dedos esticados; e o papel, pela mão aberta. Caso dois jogadores façam o mesmo gesto, ocorre um empate, e geralmente se joga de novo até desempatar.</p>
+        <!-- <p>Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas.</p> -->
+      </div>
+    </header>
+    <main>
+      <div class="main-animate">
+        <div class="human"></div>
+        <div class="cpu"></div>  
+      </div>
+      <div class="main-board">
+        <div class="human" title="human score">
+          0
+        </div>
+        <div class="result">
+          <p></p>
+        </div>
+        <div class="cpu" title="cpu score">
+          0
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-images">
+        <img src="./img/rock-icon.png" class="rock" alt="Rock" title="Rock" />
+        <img src="./img/paper-icon.png" class="paper" alt="Paper" title="Paper" />
+        <img src="./img/scissors-icon.png" class="scissors" alt="Scissors" title="Scissors" />
+      </div>
+      <div class="footer-actions">
+        <p>
+          Escolha sua jogada acima ou 
+          <a href="#" title="clique para resetar o placar">
+            clique
+          </a> 
+          aqui para resetar o placar
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
