@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Capitalizer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="field">
+          <input id="input-text" type="text" placeholder="type..." autofocus/>
+          <input id="submit-text" type="submit" value="Capitalize" />
+        </div>
+        <div class="field">
+          <input id="output-text" type="text" readonly />
+        </div>
+      </form>
+    </main>
+    <pre>
+    <i green>String</i>.<i purple>prototype</i>.<i white>capitalize</i> = function<i white>() {</i>
+      const <i blue>phrase</i> = <i purple>this</i>.<i blue>toLowerCase</i><i white>();</i>
+      const <i blue>isEmpty</i> = !<i white>phrase</i>.<i purple>length</i><i white>;</i>
+      if<i white>(isEmpty)</i> return <i white>phrase</i>.<i blue>valueOf</i><i white>();</i>
+      return <i white>phrase</i>
+        .<i blue>split</i><i white>(<i yellow>' '</i>)</i>
+        .<i blue>map</i><i white>(</i><i orange>word</i> => 
+          !<i white>word</i>.<i purple>length</i>
+            ? <i white>word</i>
+            : <i yellow>`</i>${<i white>word[<i orange>0</i>]</i>.<i blue>toUpperCase</i><i white>()</i>}${<i white>word</i>.<i blue>slice</i><i white>(</i><i orange>1</i><i yellow>,</i> <i white>word</i>.<i purple>length</i><i white>)</i>}<i yellow>`</i>
+        <i white>)</i>.<i blue>join<i white>(<i yellow>' '</i>);</i>
+    <i white>};</i>
+    </pre>
+  </body>
+  <script src="./script.js"></script>
+</html>
