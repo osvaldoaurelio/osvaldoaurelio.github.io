@@ -11,21 +11,21 @@ String.prototype.capitalize = function() {
     ).join(' ');
 };
 
-document.querySelector('form').addEventListener('submit', (e) => {
-  e.preventDefault();
+document.querySelector('form').addEventListener('submit', event => {
+  event.preventDefault();
   
   const inputText = document.querySelector('#input-text').value;
   const inputTextCapitalized = inputText.capitalize();
 
   document.querySelector('#output-text').value = inputTextCapitalized;
 
-  const code = document.querySelector('pre');
+  const pre = document.querySelector('pre');
 
-  code.innerHTML = code.innerHTML.slice(0, 1102)
-  code.innerHTML += `
+  pre.innerHTML = pre.innerHTML.slice(0, 1102);
+  pre.innerHTML += `
 
     <i yellow>"${inputText}"</i>.<i blue>capitalize</i><i white>();</i>
 
     >> <i yellow>"${inputTextCapitalized}"</i>
-  `
+  `;
 });

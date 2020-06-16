@@ -1,7 +1,7 @@
-const body = document.querySelector('body');
-
-const sections = [1, 2, 3, 4, 5];
+const sections = [1, 2, 3, 4, 5, 6];
 const menuItems = ['home', 'service', 'about', 'contact'];
+
+const body = document.querySelector('body');
 
 sections.forEach(i => {
   const h1 = document.createElement('h1');
@@ -12,11 +12,11 @@ sections.forEach(i => {
 
   const ul = document.createElement('ul');
 
-  menuItems.forEach(item => {
+  menuItems.forEach(menuItem => {
     const a = document.createElement('a');
-    a.appendChild(document.createTextNode(item));
-    a.href = `#${item}`;
-    a.title = item;
+    a.appendChild(document.createTextNode(menuItem));
+    a.href = `#${menuItem}`;
+    a.title = menuItem;
 
     const li = document.createElement('li');
     li.appendChild(a);
