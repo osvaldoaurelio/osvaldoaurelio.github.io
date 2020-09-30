@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: all .3s;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+#app {
+  display: flex;
+  color: #444;
+  height: 100vh;
+  padding: 2rem;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+#app h1, #app p, #app form {
+  flex: 1;
+  align-self: center;
+  position: relative;
+}
+
+#app form input::placeholder { color: #999 }
+
+#app form button {
+  top: 0;
+  right: 0;
+  color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  padding: 3.5px 7px;
+  border-radius: 16px;
+  background-color: #666;
+}
+
+#app form button:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+#app form input, #app ul li {
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 1px solid #9999;
+}
+
+#app ul {
+  flex: 5;
+  padding: 32px;
+  width: 666px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 16px #ddd;
+}
+
+#app ul li {
+  color: #fff;
+  cursor: pointer;
+  margin: 12px;
+  position: relative;
+  width: 400px;
+  border-color: #dddd;
+  background-color: rgb(151, 130, 11);
+}
+
+#app ul li:hover {
+  background-color: rgba(151, 130, 11, .75);
+  text-decoration: line-through;
+}
+
+#app ul li:hover::after {
+  content: 'Marcar como concluído';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -164px;
+  font-size: .75rem;
+  background-color: #080;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+
+#app ul li.is-conclued {
+  text-decoration: line-through;
+  background-color: #080
+}
+
+#app ul li.is-conclued:hover {
+  background-color: #080b;
+  text-decoration-style: double;
+}
+
+#app ul li.is-conclued:hover::after {
+  content: 'Remover';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -80px;
+  font-size: .75rem;
+  background-color: #800;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: .75rem;
+}
