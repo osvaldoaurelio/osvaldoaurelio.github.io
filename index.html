@@ -1,16 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Osvaldo Aurélio</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-  <li><a href="/regressive-counter/">Regressive Counter</a></li>
-  <li><a href="/rock-paper-scissors/">Rock Paper Scissors</a></li>
-  <li><a href="/js-capitalizer/">JS Capitalizer</a></li>
-  <li><a href="/animate-navbars/">Animate Navbars</a></li>
-  <li><a href="/toDoList-with-HTML-CSS-JS-only/">toDoList with HTML+CSS+JS only</a></li>
-</body>
-<script src="./script.js"></script>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osvaldo Aurélio - Portifólio</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/keyframes.css" />
+    <link rel="stylesheet" href="./styles/style.nav.css" />
+    <link rel="stylesheet" href="./styles/style.main.css" />
+    <link rel="stylesheet" href="./styles/style.footer.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/style.nav.lg.css"
+      media="only screen and (min-width: 992px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.main.lg.css"
+      media="only screen and (min-width: 992px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.footer.lg.css"
+      media="only screen and (min-width: 992px)"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <input type="checkbox" class="menu-checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="menu-container">
+          <div class="menu-content">
+            <a href="/" class="logo">
+              <img
+                class="logo-icon"
+                src="./assets/icons/Icon.svg"
+                alt="Icon logo"
+              />
+              <p>Osvaldo Aurélio</p>
+            </a>
+            <div class="icons">
+              <a
+                class="icon"
+                href="https://github.com/osvaldoaurelio/"
+                target="_blank"
+                title="Abrir Github em uma nova guia"
+              >
+                <img
+                  class="svg-icon"
+                  src="./assets/icons/github.svg"
+                  alt="Github de Osvaldo Aurélio"
+                />
+              </a>
+              <a
+                class="icon"
+                href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
+                target="_blank"
+                title="Abrir LinkedIn em uma nova guia"
+              >
+                <img
+                  class="svg-icon"
+                  src="./assets/icons/linkedin.svg"
+                  alt="LinkedIn de Osvaldo Aurélio"
+                />
+              </a>
+              <a
+                class="icon"
+                href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
+                target="_blank"
+                title="Abrir Currículo em uma nova guia"
+              >
+                <img
+                  class="svg-icon"
+                  src="./assets/icons/cv.svg"
+                  alt="Currículo de Osvaldo Aurélio"
+                />
+              </a>
+            </div>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Projects</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-lg">
+        <a href="/" class="logo">
+          <img
+            class="logo-icon"
+            src="./assets/icons/Icon.svg"
+            alt="Icon logo"
+          />
+        </a>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="home">
+        <figure class="avatar">
+          <img
+            src="./assets/images/osvaldo.png"
+            alt="Foto de Osvaldo Aurélio"
+          />
+        </figure>
+        <article class="info">
+          <h1>Desenvolvedor Javascript / Typescript Full Stack</h1>
+          <p>
+            Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack
+            apaixonado pela flexibilidade que o Javascript / Typescript
+            proporciona.
+          </p>
+          <div class="icons">
+            <a
+              class="icon"
+              href="https://github.com/osvaldoaurelio/"
+              target="_blank"
+              title="Abrir Github em uma nova guia"
+            >
+              <img
+                class="svg-icon"
+                src="./assets/icons/github.svg"
+                alt="Github de Osvaldo Aurélio"
+              />
+            </a>
+            <a
+              class="icon"
+              href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
+              target="_blank"
+              title="Abrir LinkedIn em uma nova guia"
+            >
+              <img
+                class="svg-icon"
+                src="./assets/icons/linkedin.svg"
+                alt="LinkedIn de Osvaldo Aurélio"
+              />
+            </a>
+            <a
+              class="icon"
+              href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
+              target="_blank"
+              title="Abrir Currículo em uma nova guia"
+            >
+              <img
+                class="svg-icon"
+                src="./assets/icons/cv.svg"
+                alt="Currículo de Osvaldo Aurélio"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <section class="hello-world">
+        <p><i>console</i>.<i>log</i>(<i>'Hello world!!'</i>);</p>
+        <p><i>console</i>.<i>log</i>(<i>'Oi meu chapa!'</i>);</p>
+      </section>
+      <section class="stack">
+        <p>Stack técnica</p>
+        <div class="icons">
+          <img class="svg-icon" src="./assets/icons/github.svg" alt="GitHub" />
+          <img
+            class="svg-icon"
+            src="./assets/icons/linkedin.svg"
+            alt="LinkedIn"
+          />
+          <img class="svg-icon" src="./assets/icons/github.svg" alt="GitHub" />
+          <img
+            class="svg-icon"
+            src="./assets/icons/linkedin.svg"
+            alt="LinkedIn"
+          />
+          <img class="svg-icon" src="./assets/icons/github.svg" alt="GitHub" />
+          <img
+            class="svg-icon"
+            src="./assets/icons/linkedin.svg"
+            alt="LinkedIn"
+          />
+        </div>
+      </section>
+      <section class="about">
+        <h2>Um pouco sobre mim</h2>
+        <div class="container">
+          <figure class="about-img">
+            <img src="./assets/images/osvaldo.png" alt="about-img" />
+          </figure>
+          <article>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              distinctio repellendus nostrum cupiditate ratione? Commodi,
+              architecto tempora, blanditiis in quaerat ratione, harum
+              praesentium delectus aliquam nulla molestiae asperiores assumenda
+              rem!
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="projects">
+        <h2>Alguns de meus projetos</h2>
+        <div class="container">
+          <div class="project" title="project name 1">
+            <figure class="project-img">
+              <img src="./assets/images/osvaldo.png" alt="project image 1" />
+            </figure>
+            <article>
+              <h2>project name 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                nulla! Aut totam fugiat veniam aperiam quod mollitia esse ut
+                harum earum. Cupiditate repudiandae earum minima rerum labore
+                perferendis repellat debitis.
+              </p>
+            </article>
+          </div>
+          <div class="project" title="project name 2">
+            <figure class="project-img">
+              <img src="./assets/images/osvaldo.png" alt="project image 2" />
+            </figure>
+            <article>
+              <h2>project name 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                nulla! Aut totam fugiat veniam aperiam quod mollitia esse ut
+                harum earum. Cupiditate repudiandae earum minima rerum labore
+                perferendis repellat debitis.
+              </p>
+            </article>
+          </div>
+          <div class="project" title="project name 3">
+            <figure class="project-img">
+              <img src="./assets/images/osvaldo.png" alt="project image 3" />
+            </figure>
+            <article>
+              <h2>project name 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                nulla! Aut totam fugiat veniam aperiam quod mollitia esse ut
+                harum earum. Cupiditate repudiandae earum minima rerum labore
+                perferendis repellat debitis.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Entre em contato comigo por...</h2>
+        <div class="cards-container">
+          <div class="E-mail card-item">
+            <h3>Eletronic Mail</h3>
+            <p></p>
+          </div>
+          <div class="IM card-item">
+            <h3>Instant Message</h3>
+            <p></p>
+          </div>
+          <div class="PR card-item">
+            <h3>Pull Request</h3>
+            <p></p>
+          </div>
+          <div class="SNS card-item">
+            <h3>Social Network</h3>
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./scripts/script.close-menu.js"></script>
+    <script src="./scripts/script.show-contacts.js"></script>
+  </body>
 </html>
