@@ -149,26 +149,41 @@
   border: 1px solid #ccc;
 }
 
+.contact .cards-container .card-item.show {
+  border-radius: 8px;
+}
+
 .contact .cards-container .card-item h3 {
   cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
 }
 
 .contact .cards-container .card-item h3::after {
-  content: " \25BC";
+  content: " \25bd";
+}
+
+.contact .cards-container .card-item.show h3::after {
+  content: " \25b3";
+}
+
+.contact .cards-container .card-item h3 img {
+  height: 16px;
+  width: 16px;
 }
 
 .contact .cards-container .card-item p {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  /* transition: max-height .5s ease-in-out, opacity .3s ease-in-out; */
   border-top: 1px solid #000;
-  margin-top: 4px;
 }
 
 .contact .cards-container .card-item.show p {
   opacity: 1;
   max-height: 1000px;
+  margin-top: 4px;
   transition: max-height 2s ease-in-out, opacity .3s ease-in-out;
 }
 
