@@ -24,6 +24,12 @@
       href="./styles/style.footer.lg.css"
       media="only screen and (min-width: 992px)"
     />
+    <meta property="og:title" content="Desenvolvedor Typescript Full Stack" />
+    <meta property="og:description" content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona" />
+    <meta property="og:image" content="https://osvaldoaurelio.github.io/assets/images/osvaldo.png" />
+    <meta property="og:url" content="https://osvaldoaurelio.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona">
   </head>
   <body>
     <nav>
@@ -83,10 +89,18 @@
               </a>
             </div>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -100,15 +114,23 @@
           />
         </a>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
     <main>
-      <section class="home">
+      <section id="home" class="home">
         <figure class="avatar">
           <img
             src="./assets/images/osvaldo.png"
@@ -189,7 +211,7 @@
           />
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <h2>Um pouco sobre mim</h2>
         <div class="container">
           <figure class="about-img">
@@ -206,7 +228,7 @@
           </article>
         </div>
       </section>
-      <section class="projects">
+      <section id="projects" class="projects">
         <h2>Alguns de meus projetos</h2>
         <div class="container">
           <div class="project" title="project name 1">
@@ -253,7 +275,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2>Entre em contato comigo por...</h2>
         <div class="cards-container">
           <div class="email card-item">

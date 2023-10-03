@@ -2,6 +2,7 @@ const SWIPE_THRESHOLD = 50;
 
 const menuCheckbox = document.querySelector('.navbar input.menu-checkbox');
 const menuContainer = document.querySelector('.navbar .menu-container');
+const menuItems = document.querySelectorAll('.navbar .menu-content ul li a')
 
 let inicialClientY;
 
@@ -22,3 +23,5 @@ const handleTouchEnd = event => {
 
 menuContainer?.addEventListener('touchstart', handleTouchStart);
 menuContainer?.addEventListener('touchend', handleTouchEnd);
+
+menuItems.forEach(m => m.addEventListener('click', closeMenu));

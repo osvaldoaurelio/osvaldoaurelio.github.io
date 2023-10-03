@@ -3,6 +3,10 @@
   font-size: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, div, main, section, figure, h1, h2, h3, p, ol, ul {
   margin: 0;
   padding: 0;
@@ -37,7 +41,11 @@ h2 { font-size: 1.75rem; }
 h3 { font-size: 1rem; }
 
 p { font-size: 1.25rem; }
-                                    
+
+a { text-decoration: none; }
+
+h1, h2, h3, p, a { color: #fff; }
+
 [class^=navbar] {
   background-color: #555;
   justify-content: space-between;
