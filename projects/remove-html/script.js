@@ -1,6 +1,6 @@
 const apiUrl = 'https://remove-html.onrender.com/' || 'http://localhost:3000/';
 
-const textLabel = 'Clique para selecionar ou arraste um arquivo de texto para processar';
+const textLabel = 'Click to select or drop a text file here to process';
 
 const fileLabel = document.getElementById('file-label');
 const fileInput = document.getElementById('file-input');
@@ -49,7 +49,7 @@ fileInput?.addEventListener('change', ({ target }) => {
 btnProcess?.addEventListener('click', async () => {
   const [file] = fileInput.files;
 
-  if (!file) return alert('Nenhum arquivo para processar\n\nUse a área acima e selecione um arquivo de texto para processar!');
+  if (!file) return alert('No files to process\n\nUse the area above and select a text file to process!');
 
   const formData = new FormData();
   formData.append('file', file);
@@ -61,7 +61,7 @@ btnProcess?.addEventListener('click', async () => {
 
   emptyFileInput();
 
-  if (!response.ok) return console.error('Erro ao processar o arquivo');
+  if (!response.ok) return console.error('Error processing the file');
   
   const fileName = response.headers.get('X-Filename') ?? 'no-html.txt';
   const blob = await response.blob();
