@@ -1,0 +1,37 @@
+main .home figure.avatar {
+  aspect-ratio: 1/1;
+  align-self: center;
+  border-radius: 50%;
+  height: 256px;
+  min-width: 256px;
+  max-width: 256px;
+  overflow: hidden;
+  box-shadow: 0 0 16px #aaaa;
+}
+
+main .home figure.avatar img{
+  object-fit: cover;
+}
+
+main .home .info h1 {
+  text-align: center;
+}
+
+main .home .info .icons {
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 992px) {
+  main .home {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  main .home .info {
+    max-width: 67%;
+  }
+
+  main .home .info h1 {
+    text-align: left;
+  }
+}

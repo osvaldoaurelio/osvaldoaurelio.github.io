@@ -1,0 +1,17 @@
+@media only screen and (min-width: 992px) {
+  main .projects .projects-container {
+    gap: 6rem;
+  }
+
+  main .projects .projects-container .project {
+    flex-direction: row;
+  }
+
+  main .projects .projects-container .project:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+
+  main .projects .projects-container .project article {
+    max-width: 67%;
+  }
+}

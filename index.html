@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <title>Osvaldo Aurélio - Portifólio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Osvaldo Aurélio - Portifólio</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/keyframes.css" />
-    <link rel="stylesheet" href="./styles/style.nav.css" />
-    <link rel="stylesheet" href="./styles/style.main.css" />
-    <link rel="stylesheet" href="./styles/style.footer.css" />
-    <link
-      rel="stylesheet"
-      href="./styles/style.nav.lg.css"
-      media="only screen and (min-width: 992px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/style.main.lg.css"
-      media="only screen and (min-width: 992px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/style.footer.lg.css"
-      media="only screen and (min-width: 992px)"
-    />
     <meta property="og:title" content="Desenvolvedor Typescript Full Stack" />
-    <meta property="og:description" content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona" />
-    <meta property="og:image" content="https://osvaldoaurelio.github.io/assets/images/osvaldo.png" />
     <meta property="og:url" content="https://osvaldoaurelio.github.io/" />
     <meta property="og:type" content="website" />
-    <meta name="description" content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona">
+    <meta
+      property="og:image"
+      content="https://osvaldoaurelio.github.io/assets/images/osvaldo.png"
+    />
+    <meta
+      property="og:description"
+      content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona"
+    />
+    <meta
+      name="description"
+      content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.home.css" />
+    <link rel="stylesheet" href="./styles/main.hello-world.css" />
+    <link rel="stylesheet" href="./styles/main.stack.css" />
+    <link rel="stylesheet" href="./styles/main.about.css" />
+    <link rel="stylesheet" href="./styles/main.projects.css" />
+    <link rel="stylesheet" href="./styles/main.contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
-    <nav>
+    <header>
       <div class="navbar">
-        <input type="checkbox" class="menu-checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox">
+        <input id="menu-checkbox" class="menu-checkbox" type="checkbox" />
+        <label for="menu-checkbox" aria-expanded="false" aria-controls="main-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -43,140 +41,78 @@
         <div class="menu-container">
           <div class="menu-content">
             <a href="/" class="logo">
-              <img
-                class="logo-icon"
-                src="./assets/icons/Icon.svg"
-                alt="Icon logo"
-              />
-              <p>Osvaldo Aurélio</p>
+              <img src="./assets/icons/logo.svg" alt="Logo do site" />
             </a>
-            <div class="icons">
-              <a
-                class="icon"
-                href="https://github.com/osvaldoaurelio/"
-                target="_blank"
-                title="Abrir Github em uma nova guia"
-              >
-                <img
-                  class="svg-icon"
-                  src="./assets/icons/github.svg"
-                  alt="Github de Osvaldo Aurélio"
-                />
-              </a>
-              <a
-                class="icon"
-                href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
-                target="_blank"
-                title="Abrir LinkedIn em uma nova guia"
-              >
-                <img
-                  class="svg-icon"
-                  src="./assets/icons/linkedin.svg"
-                  alt="LinkedIn de Osvaldo Aurélio"
-                />
-              </a>
-              <a
-                class="icon"
-                href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
-                target="_blank"
-                title="Abrir Currículo em uma nova guia"
-              >
-                <img
-                  class="svg-icon"
-                  src="./assets/icons/cv.svg"
-                  alt="Currículo de Osvaldo Aurélio"
-                />
-              </a>
-            </div>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
+            <nav aria-labelledby="main-navigation">
+              <span id="main-navigation" class="sr-only">Navegação principal</span>
+              <a href="#home">Início</a>
+              <a href="#about">Sobre</a>
+              <a href="#projects">Projetos</a>
+              <a href="#contact">Contato</a>
+            </nav>
           </div>
         </div>
       </div>
       <div class="navbar-lg">
-        <a href="/" class="logo">
-          <img
-            class="logo-icon"
-            src="./assets/icons/Icon.svg"
-            alt="Icon logo"
-          />
-        </a>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <section class="container flex-row">
+          <a href="/" class="logo">
+            <img src="./assets/icons/logo.svg" alt="Logo do site" />
+          </a>
+          <nav aria-labelledby="main-navigation">
+            <span id="main-navigation" class="sr-only">Navegação principal</span>
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+          </nav>
+        </section>
       </div>
-    </nav>
+    </header>
+
     <main>
-      <section id="home" class="home">
+      <section id="home" class="container home" aria-labelledby="home-title">
         <figure class="avatar">
           <img
             src="./assets/images/osvaldo.png"
-            alt="Foto de Osvaldo Aurélio"
+            alt="Foto de Osvaldo Aurélio, desenvolvedor Full Stack"
           />
         </figure>
         <article class="info">
-          <h1>Desenvolvedor Javascript / Typescript Full Stack</h1>
+          <h1 id="home-title">Desenvolvedor Javascript / Typescript Full Stack</h1>
           <p>
             Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack
             apaixonado pela flexibilidade que o Javascript / Typescript
             proporciona.
           </p>
-          <div class="icons">
+          <div class="icons flex-row">
             <a
-              class="icon"
               href="https://github.com/osvaldoaurelio/"
-              target="_blank"
               title="Abrir Github em uma nova guia"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                class="svg-icon"
                 src="./assets/icons/github.svg"
                 alt="Github de Osvaldo Aurélio"
               />
             </a>
             <a
-              class="icon"
               href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
-              target="_blank"
               title="Abrir LinkedIn em uma nova guia"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                class="svg-icon"
                 src="./assets/icons/linkedin.svg"
                 alt="LinkedIn de Osvaldo Aurélio"
               />
             </a>
             <a
-              class="icon"
               href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
               target="_blank"
               title="Abrir Currículo em uma nova guia"
             >
               <img
-                class="svg-icon"
                 src="./assets/icons/cv.svg"
                 alt="Currículo de Osvaldo Aurélio"
               />
@@ -184,39 +120,46 @@
           </div>
         </article>
       </section>
-      <section class="hello-world">
+      <section class="container hello-world">
         <p><i>console</i>.<i>log</i>(<i>'Hello world!!'</i>);</p>
         <p><i>console</i>.<i>log</i>(<i>'Oi meu chapa!'</i>);</p>
       </section>
-      <section class="stack">
-        <p>Stack técnica</p>
+      <section class="container stack" aria-labelledby="stack-title">
+        <h2 id="stack-title">Stack técnica</h2>
         <div class="icons">
-          <img class="svg-icon" src="./assets/icons/github.svg" alt="GitHub" />
-          <img
-            class="svg-icon"
-            src="./assets/icons/linkedin.svg"
-            alt="LinkedIn"
-          />
-          <img class="svg-icon" src="./assets/icons/github.svg" alt="GitHub" />
-          <img
-            class="svg-icon"
-            src="./assets/icons/linkedin.svg"
-            alt="LinkedIn"
-          />
-          <img class="svg-icon" src="./assets/icons/github.svg" alt="GitHub" />
-          <img
-            class="svg-icon"
-            src="./assets/icons/linkedin.svg"
-            alt="LinkedIn"
-          />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/icons/github.svg" alt="GitHub" />
         </div>
       </section>
-      <section id="about" class="about">
-        <h2>Um pouco sobre mim</h2>
-        <div class="container">
-          <figure class="about-img">
-            <img src="./assets/images/osvaldo.png" alt="about-img" />
-          </figure>
+      <section id="about" class="container about" aria-labelledby="about-title">
+        <h2 id="about-title">Um pouco sobre mim</h2>
+        <section class="content-fluid">
+          <div class="bg-parallax about-parallax" role="img" aria-label="Plano de fundo com tema de binário em tons verdes"></div>
           <article>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
@@ -226,11 +169,11 @@
               rem!
             </p>
           </article>
-        </div>
+        </section>
       </section>
-      <section id="projects" class="projects">
-        <h2>Alguns de meus projetos</h2>
-        <div class="container">
+      <section id="projects" class="container projects" aria-labelledby="projects-title">
+        <h2 id="about-title">Alguns de meus projetos</h2>
+        <div class="projects-container">
           <div class="project" title="project name 1">
             <figure class="project-img">
               <img src="./assets/images/osvaldo.png" alt="project image 1" />
@@ -275,28 +218,88 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="contact">
-        <h2>Entre em contato comigo por...</h2>
+      <section id="contact" class="container contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Entre em contato comigo por...</h2>
         <div class="cards-container">
-          <div class="email card-item">
-            <h3><img src="./assets/icons/e-mail-contact.svg"/> E-Mail</h3>
-            <p></p>
+          <div class="cards-left">
+            <div class="card-item" data-contact="email">
+              <h3 aria-expanded="false">
+                <span>
+                  <img src="./assets/icons/e-mail-contact.svg" alt="Ícone de  E-Mail" />
+                  E-Mail
+                </span>
+              </h3>
+              <p></p>
+            </div>
+            <div class="card-item" data-contact="im">
+              <h3 aria-expanded="false">
+                <span>
+                  <img src="./assets/icons/whatsapp-contact.svg" alt="Ícone de  Instant Message" />
+                  Instant Message
+                </span>
+              </h3>
+              <p></p>
+            </div>
           </div>
-          <div class="im card-item">
-            <h3><img src="./assets/icons/whatsapp-contact.svg"/> Instant Message</h3>
-            <p></p>
-          </div>
-          <div class="pr card-item">
-            <h3><img src="./assets/icons/github-contact.svg"/> Pull Request</h3>
-            <p></p>
-          </div>
-          <div class="sns card-item">
-            <h3><img src="./assets/icons/linkedin-contact.svg"/> Social Network</h3>
-            <p></p>
+          <div class="cards-right">
+            <div class="card-item" data-contact="pr">
+              <h3 aria-expanded="false">
+                <span>
+                  <img src="./assets/icons/github-contact.svg" alt="Ícone de  Pull Request" />
+                  Pull Request
+                </span>
+              </h3>
+              <p></p>
+            </div>
+            <div class="card-item" data-contact="sns">
+              <h3 aria-expanded="false">
+                <span>
+                  <img src="./assets/icons/linkedin-contact.svg" alt="Ícone de  Social Network" />
+                  Social Network
+                </span>
+              </h3>
+              <p></p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <section class="container social-links">
+        <a
+          href="https://github.com/osvaldoaurelio"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <img src="./assets/icons/github-contact.svg" alt="Ícone do GitHub" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <img src="./assets/icons/linkedin-contact.svg" alt="Ícone do LinkedIn" />
+        </a>
+        <a
+          href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Download do Currículo"
+        >
+          <img src="./assets/icons/cv.svg" alt="Ícone de Currículo" />
+        </a>
+      </section>
+      <section class="container copyright">
+        <p>&copy; <span id="year"></span>. Feito por Osvaldo Aurélio com <a title="Sim! Com um computador"">💻</a>.</p>
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+      </section>
+    </footer>    
+
     <script src="./scripts/script.close-menu.js"></script>
     <script src="./scripts/script.show-contacts.js"></script>
   </body>

@@ -1,0 +1,41 @@
+@keyframes typing {
+  from { width: 0; }
+}
+
+@keyframes blinking {
+  50% { border-color: transparent; }
+}
+
+@keyframes toggle {
+  50% { opacity: 0; }
+}
+
+main .hello-world { margin-block: 4vw; }
+
+main .hello-world p {
+  position: absolute;
+  width: 30ch;
+  font-size: clamp(1.4rem, 5vw, 4.5rem);
+  border-right: 8px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+main .hello-world p:first-child {
+  animation: typing 5s steps(30) infinite alternate,
+    blinking 0.5s infinite alternate, toggle 15s step-end infinite alternate;
+}
+
+main .hello-world p:last-child {
+  animation: typing 5s steps(30) infinite alternate,
+    blinking 0.5s infinite alternate, toggle 15s step-start infinite alternate;
+}
+
+main .hello-world p i:not(:nth-child(3)) { font-style: normal; }
+
+main .hello-world p i:nth-child(1) { color: #bd93f9; }
+
+main .hello-world p i:nth-child(2) { color: #48d479; }
+
+main .hello-world p i:nth-child(3) { color: #f1fa8c; }

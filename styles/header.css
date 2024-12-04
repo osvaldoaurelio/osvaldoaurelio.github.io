@@ -1,0 +1,133 @@
+header { margin-bottom: 6rem; }
+
+header .navbar-lg { display: none; }
+
+header [class^="navbar"] {
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+header [class^="navbar"] nav { gap: 0; }
+
+header [class^="navbar"] nav a {
+  padding: 1.25rem;
+  font-size: 1.5rem;
+}
+
+header .navbar input.menu-checkbox { display: none; }
+
+header .navbar label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  height: 20px;
+  width: 30px;
+  margin: 1rem;
+  z-index: 10;
+}
+
+header .navbar label span {
+  background-color: #ccc;
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+header .navbar label span:nth-child(2) { top: 8px; }
+header .navbar label span:nth-child(3) { top: 16px; }
+
+header .navbar input.menu-checkbox:checked + label span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+header .navbar input.menu-checkbox:checked + label span:nth-child(2) {
+  width: 0;
+}
+header .navbar input.menu-checkbox:checked + label span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+header .navbar input.menu-checkbox ~ .menu-container {
+  backdrop-filter: blur(1.5rem);
+  display: block;
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+  transition: height 0.7s ease-in-out;
+}
+
+header .navbar input.menu-checkbox:checked ~ .menu-container {
+  height: 100vh;
+}
+
+header .navbar .menu-container .menu-content {
+  padding: 1rem;
+}
+
+header .navbar .menu-container .menu-content nav a {
+  padding: 0.25rem;
+}
+
+header .navbar label:focus,
+header .navbar .menu-container .menu-content nav a:focus {
+  outline: 2px solid #00f;
+  outline-offset: 2px;
+}
+
+@media only screen and (min-width: 992px) {
+  header { margin-bottom: 8rem; }
+
+  header .navbar { display: none; }
+  
+  header .navbar-lg { display: flex; }
+  
+  header .navbar-lg section a.logo { padding: 1rem; }
+  
+  header .navbar-lg section nav { flex-direction: row; }
+  
+  header .navbar-lg section nav a {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  header .navbar-lg section nav a::before,
+  header .navbar-lg section nav a::after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  header .navbar-lg section nav a::before {
+    content: "{";
+    left: -8px;
+  }
+  
+  header .navbar-lg section nav a::after {
+    content: "}";
+    right: -8px;
+  }
+  
+  header .navbar-lg section nav a:hover::before,
+  header .navbar-lg section nav a:hover::after {
+    visibility: initial;
+    opacity: 1;
+  }
+  
+  header .navbar-lg section nav a:hover::before { left: 0; }
+  
+  header .navbar-lg section nav a:hover::after { right: 0; }
+}

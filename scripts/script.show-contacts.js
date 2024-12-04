@@ -1,3 +1,5 @@
+// const strToHex = s => [...s].map(c => c.charCodeAt(0).toString(16)).join('');
+
 const hexToStr = h => h.match(/.{1,2}/g).map(b => String.fromCharCode(parseInt(b, 16))).join('');
 
 const contacts = {
@@ -14,28 +16,30 @@ const contacts = {
     text: hexToStr('68747470733a2f2f6769746875622e636f6d2f6f7376616c646f617572656c696f'),
   },
   sns: {
-    href: hexToStr('68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f6f7376616c646f2d6175722543332541396c696f2d7269626569726f2d73696c7661'),
-    text: hexToStr('68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f6f7376616c646f2d6175722543332541396c696f2d7269626569726f2d73696c7661'),
+    href: hexToStr('68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f6f7376616c646f2d617572656c696f2f'),
+    text: hexToStr('68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f6f7376616c646f2d617572656c696f2f'),
   },
 };
 
 const generateLinkTo = ({ href, text }) => `
-  <a href="${href}" target="_blank">
+  <a href="${href}" target="_blank" rel="noopener noreferrer">
     ${text}
   </a>
 `;
 
-const handleClick = ({ target }) => {
-  const classList = target.parentElement.classList;
-  const content = target.nextElementSibling;
+const handleClick = ({ currentTarget }) => {
+  const {
+    parentElement: { classList, dataset },
+    nextElementSibling: content,
+  } = currentTarget;
 
-  classList.toggle('show');
+  const isVisible = classList.toggle('show');
+  currentTarget.setAttribute('aria-expanded', isVisible);
 
-  content.innerHTML = classList.contains('show')
-    ? generateLinkTo(contacts[classList.item(0)])
+  content.innerHTML = isVisible
+    ? generateLinkTo(contacts[dataset.contact])
     : '';
 };
 
 const titles = document.querySelectorAll('.contact .card-item h3');
-
-titles.forEach((t) => t.addEventListener('click', handleClick));
+titles.forEach(title => title?.addEventListener('click', handleClick));

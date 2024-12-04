@@ -1,0 +1,19 @@
+main .about section {
+  min-height: 480px;
+  justify-content: center;
+}
+
+main .about section .bg-parallax.about-parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/binary-green.jpg");
+}
+
+main .about section article {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+main .about section article p {
+  text-shadow: 0 0 4px #000;
+}

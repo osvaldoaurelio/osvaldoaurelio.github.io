@@ -1,27 +1,31 @@
 const SWIPE_THRESHOLD = 50;
 
-const menuCheckbox = document.querySelector('.navbar input.menu-checkbox');
-const menuContainer = document.querySelector('.navbar .menu-container');
-const menuItems = document.querySelectorAll('.navbar .menu-content ul li a')
+const menuCheckbox = document.querySelector(".navbar input.menu-checkbox");
+const menuLabel = document.querySelector(".navbar label[for='menu-checkbox']");
+const menuContainer = document.querySelector(".navbar .menu-container");
+const menuItems = document.querySelectorAll(".navbar .menu-content nav a");
 
-let inicialClientY;
+menuCheckbox?.addEventListener("change", () => {
+  menuLabel?.setAttribute('aria-expanded', menuCheckbox.checked);
+});
 
 const closeMenu = () => menuCheckbox?.click();
 
-const handleTouchStart = event => {
-  inicialClientY = event.touches[0].clientY;
+let initialTouchY;
+
+const handleTouchStart = ({ touches: [touch] }) => {
+  initialTouchY = touch.clientY;
 };
 
-const handleTouchEnd = event => {
-  const finalClientY = event.changedTouches[0].clientY;
-  const swipedUp = finalClientY - inicialClientY < SWIPE_THRESHOLD;
+const handleTouchEnd = ({ changedTouches: [changedTouch] }) => {
+  const swipeDistanceY = changedTouch.clientY - initialTouchY;
 
-  if (!swipedUp) return;
-  
+  if (swipeDistanceY >= SWIPE_THRESHOLD) return;
+
   closeMenu();
-}
+};
 
-menuContainer?.addEventListener('touchstart', handleTouchStart);
-menuContainer?.addEventListener('touchend', handleTouchEnd);
+menuContainer?.addEventListener("touchstart", handleTouchStart, { passive: true });
+menuContainer?.addEventListener("touchend", handleTouchEnd, { passive: true });
 
-menuItems.forEach(m => m.addEventListener('click', closeMenu));
+menuItems.forEach(menuItem => menuItem?.addEventListener("click", closeMenu));
