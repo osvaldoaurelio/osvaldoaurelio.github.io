@@ -7,10 +7,12 @@ main .home figure.avatar {
   max-width: 256px;
   overflow: hidden;
   box-shadow: 0 0 16px #aaaa;
+  border: 2px solid #ddd;
 }
 
 main .home figure.avatar img{
   object-fit: cover;
+  background-color: #888;
 }
 
 main .home .info h1 {

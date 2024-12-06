@@ -1,0 +1,30 @@
+#goToTop {
+  display: none;
+  background-color: #fff8;
+  color: #222;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px #0002;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#goToTop::after {
+  content: "\2B9D";
+}
+
+#goToTop:hover {
+  background-color: #fffd;
+}
+
+#goToTop:focus {
+  outline: none;
+}

@@ -1,5 +1,14 @@
-main .stack .icons {
+main .stack section.content-fluid {
+  background-color: #ccc;
+}
+
+main .stack section.content-fluid .icons {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 4rem;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 1200px;
 }

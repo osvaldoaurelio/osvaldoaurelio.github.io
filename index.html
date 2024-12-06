@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://osvaldoaurelio.github.io/assets/images/osvaldo.png"
+      content="https://osvaldoaurelio.github.io/assets/images/home/osvaldo.png"
     />
     <meta
       property="og:description"
@@ -19,6 +19,7 @@
       name="description"
       content="Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Typescript proporciona"
     />
+    <link rel="icon" href="./assets/icons/header/favicon.svg" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/main.home.css" />
@@ -28,6 +29,7 @@
     <link rel="stylesheet" href="./styles/main.projects.css" />
     <link rel="stylesheet" href="./styles/main.contact.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/go-to-top.css" />
   </head>
   <body>
     <header>
@@ -41,7 +43,7 @@
         <div class="menu-container">
           <div class="menu-content">
             <a href="/" class="logo">
-              <img src="./assets/icons/logo.svg" alt="Logo do site" />
+              <img src="./assets/icons/header/logo.svg" alt="Logo do site" />
             </a>
             <nav aria-labelledby="main-navigation">
               <span id="main-navigation" class="sr-only">Navegação principal</span>
@@ -56,7 +58,7 @@
       <div class="navbar-lg">
         <section class="container flex-row">
           <a href="/" class="logo">
-            <img src="./assets/icons/logo.svg" alt="Logo do site" />
+            <img src="./assets/icons/header/logo.svg" alt="Logo do site" />
           </a>
           <nav aria-labelledby="main-navigation">
             <span id="main-navigation" class="sr-only">Navegação principal</span>
@@ -71,51 +73,23 @@
 
     <main>
       <section id="home" class="container home" aria-labelledby="home-title">
-        <figure class="avatar">
-          <img
-            src="./assets/images/osvaldo.png"
-            alt="Foto de Osvaldo Aurélio, desenvolvedor Full Stack"
-          />
+        <figure class="avatar hover-scale">
+          <img src="./assets/images/home/osvaldo.png" alt="Foto de Osvaldo Aurélio, desenvolvedor Full Stack" />
         </figure>
         <article class="info">
           <h1 id="home-title">Desenvolvedor Javascript / Typescript Full Stack</h1>
           <p>
-            Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack
-            apaixonado pela flexibilidade que o Javascript / Typescript
-            proporciona.
+            Oi, me chamo Osvaldo Aurélio, sou um desenvolvedor Full Stack apaixonado pela flexibilidade que o Javascript / Typescript proporciona.
           </p>
           <div class="icons flex-row">
-            <a
-              href="https://github.com/osvaldoaurelio/"
-              title="Abrir Github em uma nova guia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./assets/icons/github.svg"
-                alt="Github de Osvaldo Aurélio"
-              />
+            <a href="https://github.com/osvaldoaurelio/" title="Abrir Github em uma nova guia" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/icons/home/github.svg" alt="Github de Osvaldo Aurélio" class="hover-scale" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
-              title="Abrir LinkedIn em uma nova guia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./assets/icons/linkedin.svg"
-                alt="LinkedIn de Osvaldo Aurélio"
-              />
+            <a href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/" title="Abrir LinkedIn em uma nova guia" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/icons/home/linkedin.svg" alt="LinkedIn de Osvaldo Aurélio" class="hover-scale" />
             </a>
-            <a
-              href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
-              target="_blank"
-              title="Abrir Currículo em uma nova guia"
-            >
-              <img
-                src="./assets/icons/cv.svg"
-                alt="Currículo de Osvaldo Aurélio"
-              />
+            <a href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf" target="_blank" title="Abrir Currículo em uma nova guia">
+              <img src="./assets/icons/home/cv.svg" alt="Currículo de Osvaldo Aurélio" class="hover-scale" />
             </a>
           </div>
         </article>
@@ -126,35 +100,41 @@
       </section>
       <section class="container stack" aria-labelledby="stack-title">
         <h2 id="stack-title">Stack técnica</h2>
-        <div class="icons">
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-          <img src="./assets/icons/github.svg" alt="GitHub" />
-        </div>
+        <section class="content-fluid">
+          <div class="icons">
+            <img src="./assets/icons/stack/amazon-webservices.svg" alt="Amazon WebServices" title="Amazon WebServices" class="hover-scale" />
+            <img src="./assets/icons/stack/android.svg" alt="Android" title="Android" class="hover-scale" />
+            <img src="./assets/icons/stack/arduino.svg" alt="Arduino" title="Arduino" class="hover-scale" />
+            <img src="./assets/icons/stack/azure-devops.svg" alt="Azure Devops" title="Azure Devops" class="hover-scale" />
+            <img src="./assets/icons/stack/bash.svg" alt="Bash" title="Bash" class="hover-scale" />
+            <img src="./assets/icons/stack/css3.svg" alt="CSS3" title="CSS3" class="hover-scale" />
+            <img src="./assets/icons/stack/docker.svg" alt="Docker" title="Docker" class="hover-scale" />
+            <img src="./assets/icons/stack/dotnet-core.svg" alt="Dotnet Core" title="Dotnet Core" class="hover-scale" />
+            <img src="./assets/icons/stack/drupal.svg" alt="Drupal" title="Drupal" class="hover-scale" />
+            <img src="./assets/icons/stack/express.svg" alt="Express" title="Express" class="hover-scale" />
+            <img src="./assets/icons/stack/figma.svg" alt="Figma" title="Figma" class="hover-scale" />
+            <img src="./assets/icons/stack/git.svg" alt="Git" title="Git" class="hover-scale" />
+            <img src="./assets/icons/stack/html5.svg" alt="HTML5" title="HTML5" class="hover-scale" />
+            <img src="./assets/icons/stack/javascript.svg" alt="Javascript" title="Javascript" class="hover-scale" />
+            <img src="./assets/icons/stack/jest.svg" alt="Jest" title="Jest" class="hover-scale" />
+            <img src="./assets/icons/stack/jira.svg" alt="Jira" title="Jira" class="hover-scale" />
+            <img src="./assets/icons/stack/nestjs.svg" alt="Nestjs" title="Nestjs" class="hover-scale" />
+            <img src="./assets/icons/stack/nextjs.svg" alt="Nextjs" title="Nextjs" class="hover-scale" />
+            <img src="./assets/icons/stack/nodejs.svg" alt="Nodejs" title="Nodejs" class="hover-scale" />
+            <img src="./assets/icons/stack/postgresql.svg" alt="Postgresql" title="Postgresql" class="hover-scale" />
+            <img src="./assets/icons/stack/prisma.svg" alt="Prisma" title="Prisma" class="hover-scale" />
+            <img src="./assets/icons/stack/react.svg" alt="React" title="React" class="hover-scale" />
+            <img src="./assets/icons/stack/redux.svg" alt="Redux" title="Redux" class="hover-scale" />
+            <img src="./assets/icons/stack/sass.svg" alt="Sass" title="Sass" class="hover-scale" />
+            <img src="./assets/icons/stack/sqlite.svg" alt="Sqlite" title="Sqlite" class="hover-scale" />
+            <img src="./assets/icons/stack/swagger.svg" alt="Swagger" title="Swagger" class="hover-scale" />
+            <img src="./assets/icons/stack/tailwindcss.svg" alt="TailwindCSS" title="TailwindCSS" class="hover-scale" />
+            <img src="./assets/icons/stack/typescript.svg" alt="Typescript" title="Typescript" class="hover-scale" />
+            <img src="./assets/icons/stack/vscode.svg" alt="Vscode" title="Vscode" class="hover-scale" />
+            <img src="./assets/icons/stack/webpack.svg" alt="Webpack" title="Webpack" class="hover-scale" />
+            <img src="./assets/icons/stack/wordpress.svg" alt="Wordpress" title="Wordpress" class="hover-scale" />
+          </div>
+        </section>
       </section>
       <section id="about" class="container about" aria-labelledby="about-title">
         <h2 id="about-title">Um pouco sobre mim</h2>
@@ -162,11 +142,13 @@
           <div class="bg-parallax about-parallax" role="img" aria-label="Plano de fundo com tema de binário em tons verdes"></div>
           <article>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
-              distinctio repellendus nostrum cupiditate ratione? Commodi,
-              architecto tempora, blanditiis in quaerat ratione, harum
-              praesentium delectus aliquam nulla molestiae asperiores assumenda
-              rem!
+              Com mais de seis anos de experiência em projetos desafiadores, atuo tanto no back-end quanto no front-end, sempre com o objetivo de entregar soluções eficientes e de alta qualidade. Minha jornada começou em Porangatu, Goiás, e desde cedo me interessei por ciências, matemática, e tudo que envolve criatividade e tecnologia. Essa paixão me acompanha até hoje, influenciando tanto meu trabalho quanto meus hobbies.
+            </p>
+            <p>    
+              Fora do código, gosto de me aprofundar em temas de ficção científica, explorar conceitos de física, assistir animes, e me divertir com jogos clássicos como Mortal Kombat e Super Mario. Como profissional, tenho experiência com tecnologias modernas como React, Next.js, Node.js, Nest.js, SQL, e ferramentas como Docker e AWS.
+            </p>
+            <p>
+              Adoro compartilhar conhecimento e sempre busco colaborar em equipes ágeis, ajudando a construir soluções inovadoras que atendam às necessidades dos projetos com excelência técnica e criatividade. Se quiser saber mais ou conhecer alguns dos meus projetos, entre em contato!
             </p>
           </article>
         </section>
@@ -176,7 +158,7 @@
         <div class="projects-container">
           <div class="project" title="project name 1">
             <figure class="project-img">
-              <img src="./assets/images/osvaldo.png" alt="project image 1" />
+              <img src="./assets/images/home/osvaldo.png" alt="project image 1" />
             </figure>
             <article>
               <h2>project name 1</h2>
@@ -190,7 +172,7 @@
           </div>
           <div class="project" title="project name 2">
             <figure class="project-img">
-              <img src="./assets/images/osvaldo.png" alt="project image 2" />
+              <img src="./assets/images/home/osvaldo.png" alt="project image 2" />
             </figure>
             <article>
               <h2>project name 2</h2>
@@ -204,7 +186,7 @@
           </div>
           <div class="project" title="project name 3">
             <figure class="project-img">
-              <img src="./assets/images/osvaldo.png" alt="project image 3" />
+              <img src="./assets/images/home/osvaldo.png" alt="project image 3" />
             </figure>
             <article>
               <h2>project name 3</h2>
@@ -225,8 +207,7 @@
             <div class="card-item" data-contact="email">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/e-mail-contact.svg" alt="Ícone de  E-Mail" />
-                  E-Mail
+                  <img src="./assets/icons/contact/e-mail.svg" alt="Ícone de E-Mail" /> E-Mail
                 </span>
               </h3>
               <p></p>
@@ -234,8 +215,7 @@
             <div class="card-item" data-contact="im">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/whatsapp-contact.svg" alt="Ícone de  Instant Message" />
-                  Instant Message
+                  <img src="./assets/icons/contact/whatsapp.svg" alt="Ícone de Whatsapp" /> Whatsapp
                 </span>
               </h3>
               <p></p>
@@ -245,8 +225,7 @@
             <div class="card-item" data-contact="pr">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/github-contact.svg" alt="Ícone de  Pull Request" />
-                  Pull Request
+                  <img src="./assets/icons/contact/github.svg" alt="Ícone de GitHub" /> GitHub
                 </span>
               </h3>
               <p></p>
@@ -254,8 +233,7 @@
             <div class="card-item" data-contact="sns">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/linkedin-contact.svg" alt="Ícone de  Social Network" />
-                  Social Network
+                  <img src="./assets/icons/contact/linkedin.svg" alt="Ícone de LinkedIn" /> LinkedIn
                 </span>
               </h3>
               <p></p>
@@ -267,40 +245,27 @@
 
     <footer>
       <section class="container social-links">
-        <a
-          href="https://github.com/osvaldoaurelio"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub"
-        >
-          <img src="./assets/icons/github-contact.svg" alt="Ícone do GitHub" />
+        <a href="https://github.com/osvaldoaurelio" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <img src="./assets/icons/contact/github.svg" alt="Ícone do GitHub" class="hover-scale" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="LinkedIn"
-        >
-          <img src="./assets/icons/linkedin-contact.svg" alt="Ícone do LinkedIn" />
+        <a href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <img src="./assets/icons/contact/linkedin.svg" alt="Ícone do LinkedIn" class="hover-scale" />
         </a>
-        <a
-          href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Download do Currículo"
-        >
-          <img src="./assets/icons/cv.svg" alt="Ícone de Currículo" />
+        <a href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf" target="_blank" rel="noopener noreferrer" title="Download do Currículo">
+          <img src="./assets/icons/home/cv.svg" alt="Ícone de Currículo" class="hover-scale" />
         </a>
       </section>
       <section class="container copyright">
-        <p>&copy; <span id="year"></span>. Feito por Osvaldo Aurélio com <a title="Sim! Com um computador"">💻</a>.</p>
-        <script>
-          document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
+        <p>&copy; <span id="year"></span>. Feito por Osvaldo Aurélio com <a title="Sim! Com um computador">💻</a>.</p>
       </section>
     </footer>    
 
-    <script src="./scripts/script.close-menu.js"></script>
-    <script src="./scripts/script.show-contacts.js"></script>
+    <button id="goToTop" aria-label="Ir para o topo"></button>
+
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/close-menu.js"></script>
+    <script src="./scripts/show-contacts.js"></script>
+    <script src="./scripts/set-year.js"></script>
+    <script src="./scripts/scroll-to-top.js"></script>
   </body>
 </html>

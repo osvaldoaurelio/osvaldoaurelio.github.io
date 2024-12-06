@@ -4,8 +4,8 @@ main .about section {
 }
 
 main .about section .bg-parallax.about-parallax {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
-    url("../assets/images/binary-green.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../assets/images/about/binary-green.jpg");
 }
 
 main .about section article {
@@ -15,5 +15,6 @@ main .about section article {
 }
 
 main .about section article p {
+  font-size: 1.4rem;
   text-shadow: 0 0 4px #000;
 }

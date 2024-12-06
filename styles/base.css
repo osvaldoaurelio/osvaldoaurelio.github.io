@@ -12,6 +12,7 @@ html, header, nav, body, div, main, section, article, figure, h1, h2, h3, p, ol,
 /* layout css */
 body {
   background-color: #333;
+  position: relative;
   color: #f0f0f0;
   width: 100%;
 }
@@ -103,4 +104,15 @@ a {
 
 @media only screen and (min-width: 992px) {
   html { font-size: 100%; }
+}
+
+/* animation css */
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  transform: scale(1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
 }
