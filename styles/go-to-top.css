@@ -17,10 +17,6 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-#goToTop::after {
-  content: "\2B9D";
-}
-
 #goToTop:hover {
   background-color: #fffd;
 }
