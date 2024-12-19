@@ -1,7 +1,7 @@
 function scrollToTop() {
   const SCROLL_THRESHOLD = 300;
 
-  const goToTopButton = document.getElementById('goToTop');
+  const goToTopButton = document.getElementById('go-to-top');
 
   if (!goToTopButton) return;
 

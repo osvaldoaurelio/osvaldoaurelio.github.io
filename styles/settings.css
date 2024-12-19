@@ -1,0 +1,124 @@
+#settings {
+  display: flex;
+  background-color: #fffc;
+  color: #222;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#settings:hover {
+  background-color: #fff;
+}
+
+#settings:focus {
+  outline: none;
+}
+
+#settings-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0008;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+#settings-modal .modal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 1rem;
+  background-color: #333e;
+  gap: 4rem;
+}
+
+#settings-modal .modal-content .close {
+  position: absolute;
+  top: 0.25rem;
+  right: 1rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ccc;  
+  transition: color 0.3s ease-in-out;
+}
+
+#settings-modal .modal-content .close:hover {
+  color: #fff;
+}
+
+#settings-modal .modal-content form .line {
+  border-bottom: 1px solid #ccc;
+  margin-block: 1rem;
+}
+
+#settings-modal .modal-content form .settings-item {  
+  padding-block: 2rem;
+}
+
+#settings-modal .modal-content form .settings-item img {  
+  width: 2.5rem;
+}
+
+#settings-modal .modal-content form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+  min-width: calc(100vw - 4rem);
+}
+
+#settings-modal .modal-content form select {
+  min-height: 2.5rem;
+  min-width: 200px;
+  tex-align: center;
+}
+
+#settings-modal .modal-content form button {
+  min-height: 2.5rem;
+  width: 100%;
+  margin-top: 4rem;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#settings-modal .modal-content form button:hover {
+  background-color: #222;
+  border-color: #222;
+  color: #999;
+}
+
+@media only screen and (min-width: 992px) {
+  #settings-modal .modal-content form .settings-item {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  #settings-modal .modal-content form label {
+    min-width: 200px;
+  }
+}

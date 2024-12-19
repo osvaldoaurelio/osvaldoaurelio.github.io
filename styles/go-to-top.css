@@ -1,9 +1,9 @@
-#goToTop {
+#go-to-top {
   display: none;
-  background-color: #fff8;
+  background-color: #fffc;
   color: #222;
   position: fixed;
-  bottom: 1rem;
+  bottom: 6rem;
   right: 1rem;
   width: 4rem;
   height: 4rem;
@@ -11,16 +11,14 @@
   justify-content: center;
   border: none;
   border-radius: 50%;
-  font-size: 2rem;
   cursor: pointer;
-  box-shadow: 0 0 8px #0002;
   transition: background-color 0.3s ease-in-out;
 }
 
-#goToTop:hover {
-  background-color: #fffd;
+#go-to-top:hover {
+  background-color: #fff;
 }
 
-#goToTop:focus {
+#go-to-top:focus {
   outline: none;
 }
