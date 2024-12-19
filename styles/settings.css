@@ -36,6 +36,10 @@
   padding: 1rem;
 }
 
+#settings-modal.is-open {
+  display: block;
+}
+
 #settings-modal .modal-content {
   position: relative;
   top: 50%;
@@ -110,6 +114,11 @@
   background-color: #222;
   border-color: #222;
   color: #999;
+}
+
+#settings-modal .modal-content form button[data-loading="true"] {
+  cursor: wait;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 992px) {

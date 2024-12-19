@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n="html-lang">
   <head>
-    <title>Osvaldo Aurélio - Portfolio</title>
+    <title data-i18n="title">Osvaldo Aurélio - Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Typescript Full Stack Developer" />
+    <meta property="og:title" content="Typescript Full Stack Developer" data-i18n="og:title-content"/>
     <meta property="og:url" content="https://osvaldoaurelio.github.io/" />
     <meta property="og:type" content="website" />
     <meta
@@ -14,10 +14,12 @@
     <meta
       property="og:description"
       content="Hi, my name is Osvaldo Aurélio, I'm a Full Stack developer passionate about the flexibility that Typescript provides."
+      data-i18n="og:description-content"
     />
     <meta
       name="description"
       content="Hi, my name is Osvaldo Aurélio, I'm a Full Stack developer passionate about the flexibility that Typescript provides."
+      data-i18n="description-content"
     />
     <link rel="icon" href="./assets/icons/header/favicon.svg" />
     <link rel="stylesheet" href="./styles/base.css" />
@@ -48,10 +50,10 @@
             </a>
             <nav aria-labelledby="main-navigation">
               <span id="main-navigation" class="sr-only">Main navigation</span>
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+              <a href="#home" data-i18n="home">Home</a>
+              <a href="#about" data-i18n="about">About</a>
+              <a href="#projects" data-i18n="projects">Projects</a>
+              <a href="#contact" data-i18n="contact">Contact</a>
             </nav>
           </div>
         </div>
@@ -63,10 +65,10 @@
           </a>
           <nav aria-labelledby="main-navigation">
             <span id="main-navigation" class="sr-only">Main navigation</span>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" data-i18n="home">Home</a>
+            <a href="#about" data-i18n="about">About</a>
+            <a href="#projects" data-i18n="projects">Projects</a>
+            <a href="#contact" data-i18n="contact">Contact</a>
           </nav>
         </section>
       </div>
@@ -78,8 +80,8 @@
           <img src="./assets/images/home/osvaldo.png" alt="Osvaldo Aurélio's picture, Full Stack developer" />
         </figure>
         <article class="info">
-          <h1 id="home-title">Javascript / Typescript Full Stack Developer</h1>
-          <p>
+          <h1 id="home-title" data-i18n="home:title">Javascript / Typescript Full Stack Developer</h1>
+          <p data-i18n="home:description">
             Hi, my name is Osvaldo Aurélio, I'm a Full Stack developer passionate about the flexibility that Typescript provides.
           </p>
           <div class="icons flex-row">
@@ -100,7 +102,7 @@
         <p><i>console</i>.<i>log</i>(<i>'Oi meu chapa!'</i>);</p>
       </section>
       <section class="container stack" aria-labelledby="stack-title">
-        <h2 id="stack-title">Technical Stack</h2>
+        <h2 id="stack-title" data-i18n="stack:title">Technical Stack</h2>
         <section class="content-fluid">
           <div class="icons">
             <img src="./assets/icons/stack/amazon-webservices.svg" alt="Amazon WebServices" title="Amazon WebServices" class="hover-scale" />
@@ -138,24 +140,24 @@
         </section>
       </section>
       <section id="about" class="container about" aria-labelledby="about-title">
-        <h2 id="about-title">A Bit About Myself</h2>
+        <h2 id="about-title" data-i18n="about:title">A Bit About Myself</h2>
         <section class="content-fluid">
           <div class="bg-parallax about-parallax" role="img" aria-label="Background with a Binary Theme in Shades of Green"></div>
           <article>
-            <p>
+            <p data-i18n="about:p:1">
               With over six years of experience in challenging projects, I work on both back-end and front-end development, always aiming to deliver efficient and high-quality solutions. My journey began in Porangatu, Goiás, where I developed an early interest in science, mathematics, and everything involving creativity and technology. This passion continues to inspire me today, influencing both my work and my hobbies.
             </p>
-            <p>    
+            <p data-i18n="about:p:2">    
               Outside of coding, I enjoy diving into science fiction topics, exploring physics concepts, watching anime, and having fun with classic games like Mortal Kombat and Super Mario. As a professional, I have experience with modern technologies such as React, Next.js, Node.js, Nest.js, SQL, and tools like Docker and AWS.
             </p>
-            <p>
+            <p data-i18n="about:p:3">
               I love sharing knowledge and always strive to collaborate in agile teams, helping to build innovative solutions that meet project needs with technical excellence and creativity. If you'd like to learn more or check out some of my projects, feel free to reach out!
             </p>
           </article>
         </section>
       </section>
       <section id="projects" class="container projects" aria-labelledby="projects-title">
-        <h2 id="about-title">A Selection of My Projects</h2>
+        <h2 id="projects-title" data-i18n="projects:title">A Selection of My Projects</h2>
         <div class="projects-container">
           <div class="project" title="project name 1">
             <figure class="project-img">
@@ -202,7 +204,7 @@
         </div>
       </section>
       <section id="contact" class="container contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Get in Touch with Me via...</h2>
+        <h2 id="contact-title" data-i18n="contact:title">Get in Touch with Me via...</h2>
         <div class="cards-container">
           <div class="cards-left">
             <div class="card-item" data-contact="email">
@@ -258,42 +260,45 @@
       </section>
       <section class="container copyright">
         <p>
-          &copy; <span id="year"></span>. Made by Osvaldo Aurélio with <a title="Yeah! With a PC">💻</a>.
+          &copy; <span id="year"></span><span data-i18n="copyright:span">. Made by Osvaldo Aurélio with </span><a title="Yeah! With a PC">💻</a>.
         </p>
       </section>
     </footer>
 
-    <div id="settings-modal" class="modal">
+    <div id="settings-modal" class="modal" role="dialog" aria-labelledby="settings-modal-title" aria-hidden="true">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h4>Settings</h4>
+        <h4 id="settings-modal-title" data-i18n="settings:title">Settings</h4>
         <form>
           <div class="line"></div>
           <div class="settings-item">
             <label for="languages">
               <img src="./assets/icons/language/icon.svg" alt="Languages icon" />
-              <h3>Languages</h3>
+              <h3 data-i18n="settings:languages">Languages</h3>
             </label>
             <select id="languages" name="languages">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="pt">Portuguese</option>
+              <option value="en" data-i18n="settings:en">English</option>
+              <option value="es" data-i18n="settings:es">Spanish</option>
+              <option value="fr" data-i18n="settings:fr">French</option>
+              <option value="pt" data-i18n="settings:pt">Portuguese</option>
             </select>
           </div>
           <div class="settings-item">
             <label for="themes">
               <img src="./assets/icons/theme/icon.svg" alt="Themes icon" />
-              <h3>Themes</h3>
+              <h3 data-i18n="settings:themes">Themes</h3>
             </label>
             <select id="themes" name="themes">
-              <option value="light">Light</option>
-              <option value="dark">Dark</option>
-              <option value="system">System</option>
+              <option value="light" data-i18n="settings:light">Light</option>
+              <option value="dark" data-i18n="settings:dark">Dark</option>
+              <option value="system" data-i18n="settings:system">System</option>
             </select>
           </div>
           <div class="line"></div>
           
-          <button type="submit">Save settings</button>
+          <button type="submit" aria-busy="false" data-loading="false" data-i18n="settings:save">
+            Save settings
+          </button>
         </form>
       </div>
     </div>
@@ -310,7 +315,7 @@
     <script src="./scripts/close-menu.js"></script>
     <script src="./scripts/show-contacts.js"></script>
     <script src="./scripts/set-year.js"></script>
-    <script src="./scripts/settings.js"></script>
+    <script src="./scripts/i18n.js"></script>
     <script src="./scripts/scroll-to-top.js"></script>
   </body>
 </html>
