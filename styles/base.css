@@ -11,10 +11,11 @@ html, header, nav, body, div, main, section, article, figure, h1, h2, h3, p, ol,
 
 /* layout css */
 body {
-  background-color: #333;
+  background-color: var(--background-color);
   position: relative;
-  color: #f0f0f0;
+  color: var(--text-color);
   width: 100%;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header, nav, body, div, main, section, article, footer {
