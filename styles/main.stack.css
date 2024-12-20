@@ -1,5 +1,5 @@
 main .stack section.content-fluid {
-  background-color: #ccc;
+  background-color: var(--color-muted-foreground);
 }
 
 main .stack section.content-fluid .icons {

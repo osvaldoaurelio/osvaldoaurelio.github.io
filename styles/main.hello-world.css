@@ -34,8 +34,8 @@ main .hello-world p:last-child {
 
 main .hello-world p i:not(:nth-child(3)) { font-style: normal; }
 
-main .hello-world p i:nth-child(1) { color: #bd93f9; }
+main .hello-world p i:nth-child(1) { color: var(--color-purple); }
 
-main .hello-world p i:nth-child(2) { color: #48d479; }
+main .hello-world p i:nth-child(2) { color: var(--color-green); }
 
-main .hello-world p i:nth-child(3) { color: #f1fa8c; }
+main .hello-world p i:nth-child(3) { color: var(--color-yellow); }

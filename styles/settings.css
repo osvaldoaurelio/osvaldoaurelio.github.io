@@ -1,7 +1,7 @@
 #settings {
   display: flex;
-  background-color: #fffc;
-  color: #222;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -17,7 +17,8 @@
 }
 
 #settings:hover {
-  background-color: #fff;
+  background-color: var(--color-secondary-hover);
+  color: var(--color-secondary-foreground-hover);
 }
 
 #settings:focus {
@@ -31,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0008;
+  background-color: var(--color-overlay);
   z-index: 1000;
   padding: 1rem;
 }
@@ -47,7 +48,9 @@
   transform: translate(-50%, -50%);
   width: fit-content;
   padding: 1rem;
-  background-color: #333e;
+  background-color: var(--color-popover);
+  color: var(--color-popover-foreground);
+  box-shadow: 0 0 10px var(--color-shadow);
   gap: 4rem;
 }
 
@@ -58,16 +61,16 @@
   font-size: 2.25rem;
   font-weight: bold;
   cursor: pointer;
-  color: #ccc;  
+  color: var(--color-muted-foreground);
   transition: color 0.3s ease-in-out;
 }
 
 #settings-modal .modal-content .close:hover {
-  color: #fff;
+  color: var(--color-accent-foreground);
 }
 
 #settings-modal .modal-content form .line {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--color-border);
   margin-block: 1rem;
 }
 
@@ -102,9 +105,9 @@
   width: 100%;
   margin-top: 4rem;
   cursor: pointer;
-  background-color: #111;
-  color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+  border: 1px solid var(--color-accent-foreground);
   border-radius: 0.25rem;
   padding: 0.5rem;
   font-size: 1.25rem;
@@ -114,9 +117,9 @@
 }
 
 #settings-modal .modal-content form button:hover {
-  background-color: #222;
-  border-color: #222;
-  color: #999;
+  background-color: var(--color-secondary-hover);
+  border-color: var(--color-secondary-foreground-hover);
+  color: var(--color-secondary-foreground-hover);
 }
 
 #settings-modal .modal-content form button[data-loading="true"] {

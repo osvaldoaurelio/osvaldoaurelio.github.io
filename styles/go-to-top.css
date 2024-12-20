@@ -1,7 +1,7 @@
 #go-to-top {
   display: none;
-  background-color: #fffc;
-  color: #222;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
   position: fixed;
   bottom: 6rem;
   right: 1rem;
@@ -16,7 +16,7 @@
 }
 
 #go-to-top:hover {
-  background-color: #fff;
+  background-color: var(--color-secondary-hover);
 }
 
 #go-to-top:focus {

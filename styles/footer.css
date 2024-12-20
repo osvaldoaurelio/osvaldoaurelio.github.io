@@ -1,6 +1,6 @@
 footer {
-  background-color: #2a2a2a;
-  border-top: 1px solid #ccc;
+  background-color: var(--color-primary);
+  border-top: 1px solid var(--color-border);
   margin-top: 4rem;
   margin-bottom: -2rem;
   padding-block: 1rem;

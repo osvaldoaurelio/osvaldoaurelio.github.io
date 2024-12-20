@@ -1,6 +1,6 @@
 main .contact .cards-container .card-item {
   border-radius: 8px 8px 0 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   gap: 0;
 }
 
@@ -9,7 +9,7 @@ main .contact .cards-container .card-item.show {
 }
 
 main .contact .cards-container .card-item h3 {
-  background-color: #0001;
+  background-color: var(--color-overlay);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
