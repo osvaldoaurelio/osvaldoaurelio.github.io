@@ -11,6 +11,13 @@ header [class^="navbar"] {
   right: 0;
   z-index: 1;
 }
+
+header [class^="navbar"] a.logo svg.icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-foreground);
+}
+
 header [class^="navbar"] nav { gap: 0; }
 
 header [class^="navbar"] nav a {

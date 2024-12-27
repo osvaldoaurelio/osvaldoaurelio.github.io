@@ -25,6 +25,12 @@
   outline: none;
 }
 
+#settings svg.icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-secondary-foreground);
+}
+
 #settings-modal {
   display: none;
   position: fixed;
@@ -78,8 +84,9 @@
   padding-block: 2rem;
 }
 
-#settings-modal .modal-content form .settings-item img {  
+#settings-modal .modal-content form .settings-item svg.icon {  
   width: 2.5rem;
+  height: 2.5rem;
 }
 
 #settings-modal .modal-content form label {

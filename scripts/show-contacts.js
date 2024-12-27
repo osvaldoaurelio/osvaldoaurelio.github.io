@@ -4,7 +4,7 @@ function showContacts() {
   const hexToStr = h => h.match(/.{1,2}/g).map(b => String.fromCharCode(parseInt(b, 16))).join('');
 
   const contacts = {
-    email: {
+    'e-mail': {
       href: hexToStr('6d61696c746f3a6f7376616c646f2e617572656c696f406f75746c6f6f6b2e636f6d'),
       text: hexToStr('6f7376616c646f2e617572656c696f406f75746c6f6f6b2e636f6d'),
     },

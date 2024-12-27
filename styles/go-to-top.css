@@ -22,3 +22,9 @@
 #go-to-top:focus {
   outline: none;
 }
+
+#go-to-top svg.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-secondary-foreground);
+}

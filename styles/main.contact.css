@@ -30,7 +30,7 @@ main .contact .cards-container .card-item h3 span {
   gap: 0.5rem;
 }
 
-main .contact .cards-container .card-item h3 span img {
+main .contact .cards-container .card-item h3 span svg.icon {
   height: 1.25rem;
   width: 1.25rem;
 }

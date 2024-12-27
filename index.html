@@ -21,7 +21,7 @@
       content="Hi, my name is Osvaldo Aurélio, I'm a Full Stack developer passionate about the flexibility that Typescript provides."
       data-i18n="description-content"
     />
-    <link rel="icon" href="./assets/icons/header/favicon.svg" />
+    <link rel="icon" href="./assets/icons/favicon.svg" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/header.css" />
@@ -47,7 +47,9 @@
         <div class="menu-container">
           <div class="menu-content">
             <a href="/" class="logo">
-              <img src="./assets/icons/header/logo.svg" alt="Website logo" />
+              <svg class="icon">
+                <use href="./assets/icons/sprint.svg#logo" />
+              </svg>
             </a>
             <nav aria-labelledby="main-navigation">
               <span id="main-navigation" class="sr-only">Main navigation</span>
@@ -62,7 +64,9 @@
       <div class="navbar-lg">
         <section class="container flex-row">
           <a href="/" class="logo">
-            <img src="./assets/icons/header/logo.svg" alt="Website logo" />
+            <svg class="icon">
+              <use href="./assets/icons/sprint.svg#logo" />
+            </svg>
           </a>
           <nav aria-labelledby="main-navigation">
             <span id="main-navigation" class="sr-only">Main navigation</span>
@@ -87,13 +91,19 @@
           </p>
           <div class="icons flex-row">
             <a href="https://github.com/osvaldoaurelio/" title="Open Github in another tab" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/icons/home/github.svg" alt="Osvaldo Aurélio's Github" class="hover-scale" />
+              <svg class="icon hover-scale">
+                <use href="./assets/icons/sprint.svg#github" />
+              </svg>
             </a>
             <a href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/" title="Open LinkedIn in another tab" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/icons/home/linkedin.svg" alt="Osvaldo Aurélio's LinkedIn" class="hover-scale" />
+              <svg class="icon hover-scale">
+                <use href="./assets/icons/sprint.svg#linkedin" />
+              </svg>
             </a>
             <a href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf" target="_blank" title="Open Resume in another tab">
-              <img src="./assets/icons/home/cv.svg" alt="Osvaldo Aurélio's Resume" class="hover-scale" />
+              <svg class="icon hover-scale">
+                <use href="./assets/icons/sprint.svg#cv" />
+              </svg>
             </a>
           </div>
         </article>
@@ -208,10 +218,12 @@
         <h2 id="contact-title" data-i18n="contact:title">Get in Touch with Me via...</h2>
         <div class="cards-container">
           <div class="cards-left">
-            <div class="card-item" data-contact="email">
+            <div class="card-item" data-contact="e-mail">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/contact/e-mail.svg" alt="E-Mail Icon" /> E-Mail
+                  <svg class="icon">
+                    <use href="./assets/icons/sprint.svg#e-mail" />
+                  </svg> E-Mail
                 </span>
               </h3>
               <p></p>
@@ -219,7 +231,9 @@
             <div class="card-item" data-contact="im">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/contact/whatsapp.svg" alt="Whatsapp Icon" /> Whatsapp
+                  <svg class="icon">
+                    <use href="./assets/icons/sprint.svg#whatsapp" />
+                  </svg> Whatsapp
                 </span>
               </h3>
               <p></p>
@@ -229,7 +243,9 @@
             <div class="card-item" data-contact="pr">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/contact/github.svg" alt="GitHub Icon" /> GitHub
+                  <svg class="icon">
+                    <use href="./assets/icons/sprint.svg#github" />
+                  </svg> GitHub
                 </span>
               </h3>
               <p></p>
@@ -237,7 +253,9 @@
             <div class="card-item" data-contact="sns">
               <h3 aria-expanded="false">
                 <span>
-                  <img src="./assets/icons/contact/linkedin.svg" alt="LinkedIn Icon" /> LinkedIn
+                  <svg class="icon">
+                    <use href="./assets/icons/sprint.svg#linkedin" />
+                  </svg> LinkedIn
                 </span>
               </h3>
               <p></p>
@@ -250,13 +268,19 @@
     <footer>
       <section class="container social-links">
         <a href="https://github.com/osvaldoaurelio" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <img src="./assets/icons/contact/github.svg" alt="GitHub Icon" class="hover-scale" />
+          <svg class="icon hover-scale">
+            <use href="./assets/icons/sprint.svg#github" />
+          </svg>
         </a>
         <a href="https://www.linkedin.com/in/osvaldo-aur%C3%A9lio-ribeiro-silva/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <img src="./assets/icons/contact/linkedin.svg" alt="LinkedIn Icon" class="hover-scale" />
+          <svg class="icon hover-scale">
+            <use href="./assets/icons/sprint.svg#linkedin" />
+          </svg>
         </a>
         <a href="./assets/docs/osvaldo_aurelio_cv_pt-br.pdf" target="_blank" rel="noopener noreferrer" title="Resume Download">
-          <img src="./assets/icons/home/cv.svg" alt="Resume Icon" class="hover-scale" />
+          <svg class="icon hover-scale">
+            <use href="./assets/icons/sprint.svg#cv" />
+          </svg>
         </a>
       </section>
       <section class="container copyright">
@@ -274,7 +298,9 @@
           <div class="line"></div>
           <div class="settings-item">
             <label for="languages">
-              <img src="./assets/icons/language/icon.svg" alt="Languages icon" />
+              <svg class="icon">
+                <use href="./assets/icons/sprint.svg#language" />
+              </svg>
               <p data-i18n="settings:languages">Languages</p>
             </label>
             <select id="languages" name="languages">
@@ -286,7 +312,9 @@
           </div>
           <div class="settings-item">
             <label for="themes">
-              <img src="./assets/icons/theme/icon.svg" alt="Themes icon" />
+              <svg class="icon">
+                <use href="./assets/icons/sprint.svg#theme" />
+              </svg>
               <p data-i18n="settings:themes">Themes</p>
             </label>
             <select id="themes" name="themes">
@@ -306,11 +334,15 @@
     </div>
 
     <button id="settings" aria-label="Settings" title="Languages and themes settings">
-      <img src="./assets/icons/setting/icon.svg" alt="Settings icon" />
+      <svg class="icon">
+        <use href="./assets/icons/sprint.svg#settings" />
+      </svg>
     </button>
 
     <button id="go-to-top" aria-label="Go to top" title="Go to top">
-      <img src="./assets/icons/go-to-top/icon.svg" alt="Up arrow icon" />
+      <svg class="icon">
+        <use href="./assets/icons/sprint.svg#go-to-top" />
+      </svg>
     </button>
 
     <script src="./scripts/utils.js"></script>

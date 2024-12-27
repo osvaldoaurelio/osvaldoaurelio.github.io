@@ -7,41 +7,27 @@ const themeProvider = document.querySelector("[data-theme]");
 const mediaQueryDark = window.matchMedia(`(prefers-color-scheme: ${THEME_DARK})`);
 
 const getUserPrefersTheme = () => mediaQueryDark.matches ? THEME_DARK : THEME_LIGHT;
-
 const getThemeFromLocalStorage = () => localStorage.getItem("theme") || THEME_SYSTEM;
-const setThemeInLocalStorage = (theme) => localStorage.setItem("theme", theme);
+
+const setTheme = (theme = THEME_SYSTEM, mustSaveInLocalStorage = true) => {
+  themeProvider.dataset.theme = (theme === THEME_SYSTEM) ? getUserPrefersTheme() : theme;
+  
+  if (mustSaveInLocalStorage) localStorage.setItem("theme", theme);
+};
 
 const initializeTheme = () => {
   const savedTheme = getThemeFromLocalStorage();
 
-  if (savedTheme !== THEME_SYSTEM) {
-    themeProvider.dataset.theme = savedTheme;
-  } else {
-    themeProvider.dataset.theme = getUserPrefersTheme();
-  }
-
   themeSelector.value = savedTheme;
+
+  setTheme(savedTheme, false);
 }
 
 initializeTheme();
 
-const applyTheme = () => {
-  const { value: selectedTheme } = themeSelector;
+themeSelector?.addEventListener("change", () => setTheme(themeSelector.value));
+mediaQueryDark.addEventListener("change", () => {
+  if (getThemeFromLocalStorage() !== THEME_SYSTEM) return;
 
-  setThemeInLocalStorage(selectedTheme);
-
-  if (selectedTheme !== THEME_SYSTEM) {
-    themeProvider.dataset.theme = selectedTheme;
-  } else  {
-    themeProvider.dataset.theme = getUserPrefersTheme();
-  }
-}
-
-const handleSystemThemeChange = () => {
-  if (getThemeFromLocalStorage() === THEME_SYSTEM) {
-    themeProvider.dataset.theme = getUserPrefersTheme();
-  }
-}
-
-themeSelector?.addEventListener("change", applyTheme);
-mediaQueryDark.addEventListener("change", handleSystemThemeChange);
+  setTheme(getUserPrefersTheme());
+});

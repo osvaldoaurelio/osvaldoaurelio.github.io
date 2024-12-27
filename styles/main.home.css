@@ -19,8 +19,15 @@ main .home .info h1 {
   text-align: center;
 }
 
+
 main .home .info .icons {
   justify-content: flex-end;
+}
+
+main .home .info .icons svg.icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-foreground);
 }
 
 @media only screen and (min-width: 992px) {

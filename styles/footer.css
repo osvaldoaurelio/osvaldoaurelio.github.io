@@ -17,11 +17,7 @@ footer .social-links {
   padding-block: 4rem;
 }
 
-footer .social-links a {
+footer .social-links a svg.icon {
   width: 4rem;
   height: 4rem;
-}
-
-footer .social-links a:not(:nth-child(2)) img {
-  width: 100%;
 }
